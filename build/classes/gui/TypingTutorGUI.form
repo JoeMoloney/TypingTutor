@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Typing Tutor"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="keyboardPanel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="mainPanel" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="infoPanel" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="infoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="mainPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="keyboardPanel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="noteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="textLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="textPanel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="noteLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="textLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="textPanel" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="noteLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Note: Clicking The Buttons With Your Mouse Will Not Perform Any Action."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="textLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Type Some Text Using Your Keyboard. The Keys You Press Will Be Highlighted And The Text Will Be Displayed."/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="textPanel">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" pref="630" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" pref="76" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextPane" name="textArea">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="keyboardPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="tabBtn" min="-2" pref="66" max="-2" attributes="0"/>
+                              <Component id="capsBtn" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="qBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="eBtn" min="-2" pref="44" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="rBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="tBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="yBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="uBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="iBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="oBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="pBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="leftBracketBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="rightBracketBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="backSlashBtn" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="aBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="sBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="dBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="gBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="hBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="kBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="lBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="semiColonBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="apostropheBtn" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="leftBtn" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="downBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="upBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                          <Component id="rightBtn" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="returnBtn" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="tildeBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="oneBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="twoBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="threeBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="fourBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="fiveBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="sixBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="sevenBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="eightBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="nineBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="zeroBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="hyphenBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="equalsBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="backSpaceBtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="shiftBtn" min="-2" pref="91" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="zBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="xBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="spaceBtn" min="-2" pref="269" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="cBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="vBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="nBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="mBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="commaBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="periodBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="questionMarkBtn" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="tildeBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="oneBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="twoBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="threeBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="fourBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="fiveBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="sixBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="sevenBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="eightBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="nineBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="zeroBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="hyphenBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="equalsBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="backSpaceBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="tabBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="qBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="wBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="eBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="rBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="tBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="yBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="uBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="iBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="oBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="pBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="leftBracketBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="rightBracketBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="backSlashBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="capsBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="aBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="sBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="dBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="fBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="gBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="hBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="jBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="kBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="lBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="semiColonBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="apostropheBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="returnBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shiftBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="zBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="xBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="cBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="vBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="bBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="nBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="mBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="commaBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="periodBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="questionMarkBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="spaceBtn" min="-2" pref="42" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="upBtn" min="-2" pref="42" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="downBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="leftBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="rightBtn" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="capsBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Caps"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="aBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="sBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="S"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="dBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="D"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="fBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="F"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="gBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="hBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="H"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="J"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="kBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="K"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="lBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="L"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="semiColonBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=";"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="apostropheBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&apos;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="returnBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Enter"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="backSlashBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="\u005c" containsInvalidXMLChars="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="tildeBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="~"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="oneBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="twoBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="threeBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="fourBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="fiveBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="5"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="sixBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="6"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="sevenBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="7"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="eightBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="8"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="nineBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="9"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="zeroBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="hyphenBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="-"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="equalsBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="="/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="backSpaceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="BackSpace"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="spaceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Space"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="leftBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="downBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="\u005c/" containsInvalidXMLChars="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="rightBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="vBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="V"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="bBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="B"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="nBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="N"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="mBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="M"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="commaBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=","/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="periodBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="questionMarkBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="?"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="upBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="^"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="rightBracketBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="]"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="tabBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tab"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="qBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Q"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="wBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="W"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="eBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="E"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="rBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="R"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="tBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="T"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="yBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Y"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="uBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="U"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="iBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="I"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="oBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="O"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="pBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="P"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="leftBracketBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="["/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="shiftBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Shift"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="zBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Z"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="xBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="X"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="cBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="C"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="infoPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="accuracyLabel" max="32767" attributes="0"/>
+                      <Component id="accuracyValue" max="32767" attributes="0"/>
+                      <Component id="correctCharactersLabel" max="32767" attributes="0"/>
+                      <Component id="correctCharactersValue" alignment="1" max="32767" attributes="0"/>
+                      <Component id="difficultyLabel" alignment="0" max="32767" attributes="0"/>
+                      <Component id="difficultyComboBox" alignment="1" max="32767" attributes="0"/>
+                      <Component id="incorrectCharactersLabel" alignment="0" max="32767" attributes="0"/>
+                      <Component id="incorrectCharactersValue" alignment="0" max="32767" attributes="0"/>
+                      <Component id="resetBtn" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="accuracyLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="accuracyValue" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="correctCharactersLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="correctCharactersValue" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="incorrectCharactersLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="incorrectCharactersValue" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                  <Component id="difficultyLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="difficultyComboBox" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="resetBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="accuracyLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Accuracy:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="accuracyValue">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="100%"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="correctCharactersLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Correct Characters:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="correctCharactersValue">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="difficultyLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Difficulty:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="difficultyComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="11">
+                <StringItem index="0" value="Select:"/>
+                <StringItem index="1" value="[Easy] Driven Jocks"/>
+                <StringItem index="2" value="Bog Dwarves"/>
+                <StringItem index="3" value="Quick Brown Fox"/>
+                <StringItem index="4" value="Zombies Arrive"/>
+                <StringItem index="5" value="[Medium] Plaid Jackets"/>
+                <StringItem index="6" value="Crazy Frederick"/>
+                <StringItem index="7" value="Pluck And Zeal"/>
+                <StringItem index="8" value="Oxygen Equipment"/>
+                <StringItem index="9" value="Antique Ivory Buckles"/>
+                <StringItem index="10" value="[Hard] Beautiful Gowns"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="difficultyComboBoxItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="incorrectCharactersLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Incorrect Characters:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="incorrectCharactersValue">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="resetBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reset"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resetBtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
